@@ -1,0 +1,20 @@
+body {
+    margin-top: 60px;
+    background: #ECECEA;
+  }
+  
+  .text {
+    font-family: Lobster;
+    color: #558C89;
+    font-size: 20px;
+    margin: auto;
+  }
+  #card {
+    margin-top: 10px;
+  }
+  
+  #weatherPic {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+  }

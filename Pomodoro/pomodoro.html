@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+    <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+    <title>CodePen - FCC:Pomodoro 2.0</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Orbitron" rel="stylesheet">
+    
+    
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+    <link rel='stylesheet prefetch' href='./css/pomodoro.css'>
+</head>
+
+<body translate="no" >
+
+  <div class="container">
+  <h2 id="title" class="unselectable center">Pomodoro Timer</h2>
+  <div id="main">
+    
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8 mx-auto">
+        <div id="tomato-parent" >
+          <div id="tomato">
+            <div class="leaf2">
+              <div class="leaf1">
+              </div>
+            </div>
+            <div class="leaf3">
+              <div class="leaf4">
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+   
+      <div id="timer-settings">
+        <div class="row">
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-4">
+            <p id="work-title" class="unselectable">Pomodoro</p>
+            <p><i id="work-minus" class="material-icons unselectable">remove_circle_outline</i><span id="display-work" class="unselectable">  25  </span><i id="work-plus" class="material-icons unselectable">add_circle_outline</i></p>
+          </div>
+          <div class="col-sm-2">
+          </div>
+          <div class="col-sm-4">
+            <p id="break-title" class="unselectable">Break</p>
+            <p><i id="break-minus" class="material-icons unselectable">remove_circle_outline</i><span id="display-break" class="unselectable">  5  </span><i id="break-plus" class="material-icons unselectable">add_circle_outline</i></p>
+          </div>
+          <div class="col-sm-1">
+          </div>
+        </div>       
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-4">
+        </div> 
+        <div class="col-sm-4">
+          <label id="timer" class="my-auto unselectable center">25:00</label>
+        </div>
+        <div class="col-sm-4">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6">
+          <div id="controls" class="row center">
+              <button id="btn-pause" class="btn btn-warning col-sm">Pause</button>
+              <button id="btn-start" class="btn btn-success col-sm">Start</button>
+              <button id="btn-stop" class="btn btn-danger col-sm">Stop</button>
+          </div>
+        </div>
+        <div class="col-sm-3">
+        </div>
+      </div>
+    </div
+  </div>
+  <footer class="center">
+    <h5><small class="text-secondary">KleBe © 2018</small></h5>
+  </footer>
+</div>
+<audio id="audio" preload="auto" src="https://dl.dropbox.com/s/rcwhe9qivkwco2f/slow-spring-board.mp3?dl=0"></audio>
+<audio id="audio-ff" preload="auto" src="https://dl.dropbox.com/s/h3igrr7zvlb2ji7/slow-spring-board.wav?dl=0"></audio>
+<audio id="audio-multi" preload="auto">
+  <source src="https://dl.dropbox.com/s/rcwhe9qivkwco2f/slow-spring-board.mp3?dl=0" type="audio/mpeg"/>
+  <source src="https://dl.dropbox.com/s/dsn7tdkf5c92paw/slow-spring-board.ogg?dl=0" type="audio/ogg; codecs=vorbis"/>
+  <source src="https://dl.dropbox.com/s/h3igrr7zvlb2ji7/slow-spring-board.wav?dl=0" type="audio/wav"/>
+</audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+
+    <script src='./js/pomodoro.js' ></script>
+</body>
+
+</html>

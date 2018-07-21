@@ -1,0 +1,50 @@
+body {
+    margin-top: 60px;
+    background: #164767;
+    color: white;
+  }
+  
+  .result {
+    margin: 5px;
+    padding: 5px;
+    border: #a1651a solid 1px;
+    display: none;
+    border-radius: 3px;
+  }
+  
+  #random {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .card {
+    display: none;
+    background: #105582;
+    color: white;
+  }
+  
+  .card a {
+    color: #a1651a;
+  }
+  
+  #target {
+    margin-bottom: 10px;
+  }
+  
+  #inp {
+    width: 50%;
+  }
+  
+  
+  #searchclear {
+    position: absolute;
+    right: 50%;
+    margin: auto;
+    font-size: auto;
+    cursor: pointer;
+    color: #ccc;
+  }
+
+  form button:hover {
+    cursor: pointer;
+  }

@@ -1,0 +1,135 @@
+
+body {
+  background-color: Silver;
+  margin-top: 60px;
+}
+
+footer {
+  margin: 20px 10px 10px;
+}
+
+#calc {
+  background-color: DimGray;
+  border-radius: 10px;
+  padding: 10px 15px 10px;
+  box-shadow: 10px 10px 8px #888888;
+  min-width: 280px;
+  /* box-shadow: 0px 0px 25px #888888; // on all sides */
+}
+
+.calc-title {
+  color: AliceBlue;
+  font-size: 15px;
+  margin: 5px 10px 5px 5px;
+}
+
+#expression-box {
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: MediumSeaGreen;
+  padding: 1px 15px 1px 1px;
+  margin: 1px 1px 15px 1px;
+  height: 70px;
+}
+
+#expression {
+  font-size: 24px;
+  /* padding: 5px 1px 1px 1px; */
+  height: 26px;
+}
+
+#history {
+  font-size: 12px;
+  /* padding: 1px 5px 1px 1px; */
+  height: 14px;
+}
+
+.num-pad {
+  margin: 5px 0px 10px 0px;
+  display: grid;    
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 5px;
+  grid-template-areas:
+    "a7 a8 a9  ac  ce"
+    "a4 a5 a6  mul divi"
+    "a1 a2 a3  min eq"
+    "a0 a0 dot pl  eq"; 
+}
+
+.one {
+  grid-area: a1;
+}
+
+.two {
+  grid-area: a2;
+}
+
+.three {
+  grid-area: a3;
+}
+
+.four {
+  grid-area: a4;
+}
+
+.five {
+  grid-area: a5;
+}
+
+.six {
+  grid-area: a6;
+}
+
+.seven {
+  grid-area: a7;
+}
+
+.eight{
+  grid-area: a8;
+}
+
+.nine {
+  grid-area: a9;
+}
+
+.zero {
+  grid-area: a0;
+
+}
+
+.dot {
+  grid-area: dot;
+}
+
+.ac {
+  grid-area: ac;
+}
+
+.ce {
+  grid-area: ce;
+}
+
+.minus {
+  grid-area: min;
+}
+
+.plus {
+  grid-area: pl;
+}
+
+.multiply {
+  grid-area: mul;
+}
+
+.divide {
+  grid-area: divi;
+}
+
+.equals {
+  grid-area: eq;
+}
+
+.oper {
+  background-color: LightGray;
+}

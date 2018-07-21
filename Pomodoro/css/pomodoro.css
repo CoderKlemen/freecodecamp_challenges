@@ -1,0 +1,173 @@
+body {
+    margin-top: 60px;
+    background-color: GhostWhite;
+  }
+  
+  #controls {
+    margin: 0px 0px 0px;
+  }
+  
+  #controls button {
+    margin: 5px 5px 5px;
+    max-width: 30%; 
+    min-width: 25%;
+  }
+  
+  #column-btn {
+    min-width: 150px;
+  }
+  
+  #main {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  #title {
+    font-family: 'Supermercado One', cursive;
+    color: IndianRed;
+    text-shadow: 1px 1px 5px LightCoral;
+    font-size: 80px;
+    margin-bottom: 50px;
+  }
+  
+  #timer {
+    font-size: 80px;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  #btn-pause:hover {
+    cursor: pointer;
+  }
+  
+  #btn-start:hover {
+    cursor: pointer;
+  }
+  
+  #btn-stop:hover {
+    cursor: pointer;
+  }
+  
+  
+  .unselectable {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  
+  
+  footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  
+  #tomato-parent {
+    text-align: center;
+  }
+  
+  #tomato {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: hsl(120, 100%, 35%); 
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px; 
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .leaf1 {
+    margin-left: 20px;
+    width: 30px; height: 30px;
+    background-color: DarkGreen; 
+    -moz-border-radius: 100px 0px;
+    -webkit-border-radius: 100px 0px;
+    border-radius: 100px 0px;
+  }
+  
+  .leaf2 {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 30px; height: 30px;
+    background-color: DarkGreen; 
+    -moz-border-radius: 0px 100px;
+    -webkit-border-radius: 0px 100px;
+    border-radius: 0px 100px;
+  }
+  
+  .leaf3 {
+    margin-top: -10px;
+    margin-left: 10px;
+    width: 30px; height: 30px;
+    background-color: DarkGreen; 
+    -moz-border-radius: 100px 0px;
+    -webkit-border-radius: 100px 0px;
+    border-radius: 100px 0px;
+  }
+  
+  .leaf4 {
+    margin-left: 20px;
+    width: 30px; height: 30px;
+    background-color: DarkGreen; 
+    -moz-border-radius: 0px 100px;
+    -webkit-border-radius: 0px 100px;
+    border-radius: 0px 100px;
+  }
+  
+  
+  #timer-settings {
+    margin-top: 20px;
+    color: DimGray;
+    text-align: center;
+  }
+  
+  #timer-settings p {
+    font-size: 20px; 
+  }
+  
+  #timer-settings span {
+    font-size: 30px;
+  }
+  
+  #timer-display {
+    color: Silver;
+    text-align: center;
+  }
+  
+  #timer {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 80px;
+    text-align: center; 
+  }
+  
+  #work-minus:hover {
+    cursor: pointer;
+  }
+  
+  #work-plus:hover {
+    cursor: pointer;
+  }
+  
+  #break-minus:hover {
+    cursor: pointer;
+  }
+  
+  #break-plus:hover {
+    cursor: pointer;
+  }
+  
+  #break-title:hover {
+    cursor: pointer;
+  }
+  
+  #work-title:hover {
+    cursor: pointer;
+  }

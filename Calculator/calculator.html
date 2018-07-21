@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - FCC: Calculator</title>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css'>
+
+  <link rel='stylesheet prefetch' href='./css/calculator.css'>
+</head>
+
+<body translate="no" >
+
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div id="calc" class="col-sm-4">
+        <div class="calc-title text-right">
+          <h6>Electronic Calculator</h6>
+        </div>
+        <div id="expression-box" class="text-right">
+          <div>
+            <p id="expression">0</p>
+          </div>
+          <div>
+            <p id="history">0</p>
+          </div>
+        </div>
+        <div class="num-pad">
+          <a id="one" class="btn btn-secondary one">1</a>
+          <a id="two" class="btn btn-secondary two">2</a>
+          <a id="three" class="btn btn-secondary three">3</a>
+          <a id="four" class="btn btn-secondary four">4</a>         
+          <a id="five" class="btn btn-secondary five">5</a>         
+          <a id="six" class="btn btn-secondary six">6</a> 
+          <a id="seven" class="btn btn-secondary seven">7</a>          
+          <a id="eight" class="btn btn-secondary eight">8</a>          
+          <a id="nine" class="btn btn-secondary nine">9</a>          
+          <a id="zero" class="btn btn-secondary zero">0</a>         
+          <a id="dot" class="btn btn-secondary dot">.</a>         
+          <a id="ac" class="btn btn-danger ac">AC</a>         
+          <a id="ce" class="btn btn-danger ce">CE</a>         
+          <a id="minus" class="btn btn-secondary minus oper">-</a>         
+          <a id="plus" class="btn btn-secondary plus oper">+</a>          
+          <a id="divide" class="btn btn-secondary divide oper">÷</a>          
+          <a id="multiply" class="btn btn-secondary multiply oper">x</a>          
+          <a id="equals" class="btn btn-warning equals">=</a>         
+        </div>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+  </div>
+  <footer class="text-center text-dark">
+    <h6>KleBe © 2018</h6>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>  
+
+  <script src='./js/calculator.js'></script>
+</body>
+
+</html>

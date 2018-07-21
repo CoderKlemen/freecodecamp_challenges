@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+    <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+    <title>fCC: Wikipedia Viewer</title>
+  
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel='stylesheet prefetch' href='./css/wikipedia_viewer.css'>
+
+
+
+</head>
+
+<body translate="no" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src='./js/wikipedia_viewer.js'></script>
+
+  <div class="container">
+  <div>
+    <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" id="random"><h6>Click here for a  random article...</h6></a>
+  </div>
+  <div>
+    <form id="target" class="form-group">
+      <div class="input-group">
+      <input type="search" id="inp" name="inp" placeholder="wikipedia search...">
+      <i id="searchclear" class="input-group-addon fa fa-times"></i>
+      </div>
+      <button type="submit" class="btn btn-outline-success">Go</button>
+    </form>
+  </div>
+  <div class="card rounded">
+    <div class="card-body result">
+      <strong><a href="#" id="p0_page" target="_blank"></a></strong>
+      <p id="p0_content"></p>
+    </div>
+    <div class="card-body result">
+      <strong><a href="#" id="p1_page" target="_blank"></a></strong>
+      <p id="p1_content"></p>
+    </div>
+    <div class="card-body result">
+      <strong><a href="#" id="p2_page" target="_blank"></a></strong>
+      <p id="p2_content"></p>
+    </div>
+    <div class="card-body result">
+      <strong><a href="#" id="p3_page" target="_blank"></a></strong>
+      <p id="p3_content"></p>
+    </div>
+    <div class="card-body result">
+      <strong><a href="#" id="p4_page" target="_blank"></a></strong>
+      <p id="p4_content"></p>
+    </div>
+    <div class="card-body result">
+      <strong><a href="#" id="p5_page" target="_blank"></a></strong>
+      <p id="p5_content"></p>
+    </div>
+    <div class="card-body result">
+      <strong><a href="#" id="p6_page" target="_blank"></a></strong>
+      <p id="p6_content"></p>
+    </div>
+    <div class="card-body result">
+      <strong><a href="#" id="p7_page" target="_blank"></a></strong>
+      <p id="p7_content"></p>
+    </div>
+    <div class="card-body result">
+      <strong><a href="#" id="p8_page" target="_blank"></a></strong>
+      <p id="p8_content"></p>
+    </div>
+    <div class="card-body result">
+      <strong><a href="#" id="p9_page" target="_blank"></a></strong>
+      <p id="p9_content"></p>
+    </div>
+  </div>
+</div>
+<footer class="text-center">
+  <h6><small>KleBe © 2017</small></h6>
+</footer>
+  </body>
+
+</html>

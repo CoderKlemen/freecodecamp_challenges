@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - FCC: Show Local Weather</title>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Indie+Flower|Lora:700|Ceviche+One|Chewy|Fredoka+One|Lobster|Shrikhand" rel="stylesheet">
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+    <link rel='stylesheet prefetch' href='./css/show_local_weather.css'>
+</head>
+
+<body translate="no" >
+
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-10">
+    </div>
+    <div class="col-sm-1">
+      <div class="btn-group" data-toggle="buttons">
+        <label id="labelC" class="btn btn-outline-info active">
+          <input type="radio" name="options" id="optionC" autocomplete="off" checked>°C
+        </label>
+        <label id="labelF" class="btn btn-outline-info">
+          <input type="radio" name="options" id="optionF" autocomplete="off">°F
+        </label>
+      </div>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+  <div id="card" class="card rounded">
+    <div class="card-body bg-light rounded text-center text-info">
+      <p id="place" class="text"></p>
+      <p id="coords" class="text"></p>
+      <p id="weather" class="text"></p><img src="" id="wIcon">
+      <p id="temp" class="text"></p>
+      <p id="humidity" class="text"></p>
+      <p id="refreshTime" class="text"></p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <img id="weatherPic" src="" alt="" class="">
+    </div>
+  </div>
+</div>
+<footer class="text-center">
+  <h6><small>KleBe © 2017</small></h6>
+</footer>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js'></script>
+
+<script src='./js/show_local_weather.js'></script>
+
+</body>
+</html>

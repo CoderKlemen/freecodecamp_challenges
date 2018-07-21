@@ -1,0 +1,47 @@
+body {
+    margin-top: 60px;
+  }
+  
+/* .rand-back-color {
+    background-color: rgb(116, 123, 123); 
+} */
+  
+  #quote-div {
+    background-color: beige;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+  }
+  
+  #button-card {
+    margin-bottom: 10px;
+  }
+  
+  .icon-color {
+    color: green;
+    padding-left: 5px;
+    padding-right: 5px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 5px;
+  }
+  
+  .icon-color:hover {
+    filter: brightness(65%);
+  }
+  
+  #button-quote {
+    background-color: green;
+    color: white;
+    margin: auto;
+    padding: 5px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 2px;
+  }
+  
+  #button-quote:hover {
+    filter: brightness(65%);
+  }
