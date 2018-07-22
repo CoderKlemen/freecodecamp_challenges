@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>fCC: Tic Tac Toe</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+
+<link rel='stylesheet prefetch' href='./css/tictactoe.css'>
+
+</head>
+
+<body translate="no" >
+
+  
+
+<div class="container">
+  <!-- Modal end-game -->
+  <div class="modal modal-sm fade" id="winModal" role="dialog">
+    <div class="modal-dialog">    
+      <h4 id="modalText">Player 1 won!</h4>
+      <div class="modal-body">
+        <form role="form">
+          <button type="submit" data-dismiss="modal" class="btn btn-success btn-block">OK</button>
+        </form>
+      </div>
+    </div> 
+  </div>
+  
+  <!-- Modal, choose type of token -->
+  <div class="modal modal-sm fade" id="tokenModal" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h4>Choose token type</h4>
+        <div class="modal-body">
+          <button id="tokenRadioO" type="button" class="btn btn-dark"> O </button>
+          <button id="tokenRadioX" type="button" class="btn btn-dark"> X </button>
+        </div>
+      </div> 
+    </div>
+  </div>
+  
+  
+  <div id="main" class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+      <div class="center">
+        <div class="btn-group" data-toggle="buttons" id="checkbox">
+          <label class="btn btn-info active">
+            <input type="radio" name="options" id="option-2players" autocomplete="off" checked>Two players</label>
+          <label class="btn btn-info">
+            <input type="radio" name="options" id="option-computer" autocomplete="off">Vs. Computer
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <!-- TO-DO: something happens when the score changes: color change for a second, animation, ... -->
+          <label class="unselectable player" id="player1-label">Player 1:</label>
+          <label class="unselectable" id="player1-score">0</label>
+        </div>
+        <div class="col-sm-2 my-auto center">
+          <h4><i class="fas fa-redo" id="reload"></i></h4>
+        </div>
+        <div class="col-sm-5">       
+          <label class="unselectable player" id="player2-label">Player 2:</label>
+          <label class="unselectable" id="player2-score">0</label>
+        </div>
+      </div>
+      <div class="table">
+        <table>
+          <tr>
+            <td id="cell-0"></td>
+            <td id="cell-1"></td>
+            <td id="cell-2"></td>
+          </tr>
+          <tr>
+            <td id="cell-3"></td>
+            <td id="cell-4"></td>
+            <td id="cell-5"></td>
+          </tr>
+          <tr>
+            <td id="cell-6"></td>
+            <td id="cell-7"></td>
+            <td id="cell-8"></td>
+          </tr>
+        </table> 
+      </div>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+  <footer class="center">
+    <h5>
+      <small class="text-secondary">KleBe © 2018</small>
+    </h5>
+  </footer>
+</div>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+
+<script src='./js/tictactoe.js'></script>
+
+</body>
+
+</html>
