@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>fCC: Simon Game</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
+  
+  
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <link rel='stylesheet prefetch' href='./css/simon_game.css'>
+
+
+</head>
+
+<body translate="no" >
+
+  <div class="container">
+  <div class="center">
+    <div id="main">
+      <svg width="600" height="600">
+        <defs>
+          <filter id="btn_blur">
+           <feGaussianBlur stdDeveGaussianBlur stdDeviation="1" in="SourceGraphic"/>
+          </filter>
+        </defs>
+        
+        <path id="seg-green" 
+              d="M100,300 
+                 A 200 200 0 0 1 300 100
+                 v 100
+                 A 100 100 0 0 0 200 300
+                 z" 
+              stroke="black"
+              stroke-width="20"/>
+
+        <path id="seg-red" 
+              d="M300,100 
+                 A 200 200 0 0 1 500 300
+                 h -100
+                 A 100 100 0 0 0 300 200
+                 z" 
+              stroke="black"
+              stroke-width="20"/>
+
+        <path id="seg-blue" 
+              d="M500,300 
+                 A 200 200 0 0 1 300 500
+                 v -100
+                 A 100 100 0 0 0 400 300
+                 z" 
+              stroke="black"
+              stroke-width="20"/>
+
+        <path id="seg-yellow" 
+              d="M300,500 
+                 A 200 200 0 0 1 100 300
+                 h 100
+                 A 100 100 0 0 0 300 400
+                 z" 
+              stroke="black"
+              stroke-width="20"/>
+
+        <circle cx="300" cy="300" r="100" stroke="black" stroke-width="10" fill="beige" />
+        
+        <text id="text-simon" text-anchor="middle" font-family="Times" font-size="52" font-weight="bold" y="280" x="300" stroke-width="2" stroke="#000" fill="#000000">Simon<tspan dy="-25" style="font-size: 14px" stroke-width="0">&#174</tspan></text>
+        
+        <rect id="display-moves" rx="10" height="40" width="60" y="295" x="230" stroke-width="2.5" stroke="#000" fill="#541212"/>
+        
+        <text id="text-moves" text-anchor="middle" font-family="Orbitron" font-size="24"  letter-spacing="2px" y="324" x="262" stroke-width="2" stroke="Brown">  </text>
+
+        <circle id="btn-start" cx="320" cy="315" r="12" stroke="black" stroke-width="1" fill="red"/>
+        
+        <circle id="btn-start-shadow" cx="320" cy="315" r="13" stroke="black" stroke-width="3" fill="none" filter="url(#btn_blur)"/>
+        
+        <circle id="btn-strict" cx="360" cy="315" r="12" stroke="black" stroke-width="1" fill="yellow"/>
+        
+        <circle id="btn-strict-shadow" cx="360" cy="315" r="13" stroke="black" stroke-width="3" fill="none" filter="url(#btn_blur)"/>
+
+        
+        <circle id="light-strict" cx="360" cy="295" r="4" stroke="black" stroke-width="0.75" fill="black"/>
+        
+        <rect rx="1" id="btn-turnon-black" height="19" width="50" y="361" x="275" stroke-width="0.5" stroke="#000" fill="black"/>
+        
+        <!-- 
+        off position: x = 277,  y = 358
+        on position: x = 303, y = 358
+        -->
+        <rect rx="1" id="btn-turnon-blue" height="16" width="20" y="363" x="277" fill="DodgerBlue"/>
+        
+        <text text-anchor="middle" font-family="Times" font-size="14" id="text-count" y="350" x="260" stroke-width="0" stroke="#000" fill="#000000">Count</text>
+        
+        <text text-anchor="middle" font-family="Times" font-size="14" id="text-start" y="345" x="320" stroke-width="0" stroke="#000" fill="#000000">Start</text>
+        
+        <text text-anchor="middle" font-family="Times" font-size="14" id="text-strict" y="345" x="360" stroke-width="0" stroke="#000" fill="#000000">Strict</text>
+        
+        <text text-anchor="middle" font-family="Times" font-size="14" id="text-off" y="377" x="260" stroke-width="0" stroke="#000" fill="#000000">Off</text>
+        
+        <text text-anchor="middle" font-family="Times" font-size="14" id="text-on" y="377" x="335" stroke-width="0" stroke="#000" fill="#000000">On</text>
+
+      </svg>
+    </div>
+    <div>
+      <audio id="simonSound1" preload="auto" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+      <audio id="simonSound2" preload="auto" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+      <audio id="simonSound3" preload="auto" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+      <audio id="simonSound4" preload="auto" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+    </div>
+  </div>
+</div>
+  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+
+    <script src='./js/simon_game.js'></script>
+
+</body>
+
+</html>

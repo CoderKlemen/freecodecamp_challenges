@@ -1,0 +1,57 @@
+body {
+    background-color: WhiteSmoke;
+    margin-top: 60px;
+  }
+  
+  #seg-red {
+    fill: #8b0000;
+  }
+  
+  #seg-red:hover {
+    cursor: pointer;  
+  }
+  
+  #seg-blue {
+    fill: #0000A0;
+  }
+  
+  #seg-blue:hover {
+    cursor: pointer;  
+  }
+  
+  #seg-green {
+    fill: #006400
+  }
+  
+  #seg-green:hover {
+    cursor: pointer;  
+  }
+  
+  #seg-yellow {
+    fill: #999900;
+  }
+  
+  #seg-yellow:hover {
+    cursor: pointer;  
+  }
+  
+  #btn-start:hover {
+    cursor: pointer;
+  }
+  
+  #btn-strict:hover {
+    cursor: pointer;
+  }
+  
+  #btn-turnon-blue:hover {
+    cursor: pointer;
+  }
+  
+  #reserved-sign {
+    text-transform: uppercase;
+  }
+  
+  .center {
+    text-align: center;
+    align-content: center;
+  }
