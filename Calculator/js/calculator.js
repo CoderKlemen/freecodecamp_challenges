@@ -4,7 +4,13 @@ let calculatorScope = {
     flagDot: 0,
     flagOper: 0,
     arrayExp: [],
-    middle: 0
+    middle: 0,
+    maxLengthExpression: 40,
+    maxLengthHistory: 50,
+
+    checkLength: function(string, maxLength) {
+      return string.length <= maxLength ? true : false;
+    }
   } 
   
   /*$(document).ready(function() { 
@@ -30,72 +36,95 @@ let calculatorScope = {
   
   // digits and dot
   document.getElementById("one").onclick = function () {
-    calculatorScope.expression += "1";
-    document.getElementById("expression").innerHTML = calculatorScope.expression;
-    calculatorScope.flagOper = 0;
+    if ( calculatorScope.checkLength(expression, maxLengthExpression) ) { 
+      calculatorScope.expression += "1"; 
+      document.getElementById("expression").innerHTML = calculatorScope.expression;
+      calculatorScope.flagOper = 0;
+    };
+    
   }
   
   document.getElementById("two").onclick = function () {
-    calculatorScope.expression += "2";
-    document.getElementById("expression").innerHTML = calculatorScope.expression;
-    calculatorScope.flagOper = 0;
+    if ( calculatorScope.checkLength(expression, maxLengthExpression) ) { 
+      calculatorScope.expression += "2"; 
+      document.getElementById("expression").innerHTML = calculatorScope.expression;
+      calculatorScope.flagOper = 0;
+    };
   }
   
   document.getElementById("three").onclick = function () {
-    calculatorScope.expression += "3";
-    document.getElementById("expression").innerHTML = calculatorScope.expression;
-    calculatorScope.flagOper = 0;
+    if ( calculatorScope.checkLength(expression, maxLengthExpression) ) { 
+      calculatorScope.expression += "3"; 
+      document.getElementById("expression").innerHTML = calculatorScope.expression;
+      calculatorScope.flagOper = 0;
+    };
   }
   
   document.getElementById("four").onclick = function () {
-    calculatorScope.expression += "4";
-    document.getElementById("expression").innerHTML = calculatorScope.expression;
-    calculatorScope.flagOper = 0;
+    if ( calculatorScope.checkLength(expression, maxLengthExpression) ) { 
+      calculatorScope.expression += "4"; 
+      document.getElementById("expression").innerHTML = calculatorScope.expression;
+      calculatorScope.flagOper = 0;
+    };
   }
   
   document.getElementById("five").onclick = function () {
-    calculatorScope.expression += "5";
-    document.getElementById("expression").innerHTML = calculatorScope.expression;
-    calculatorScope.flagOper = 0;
+    if ( calculatorScope.checkLength(expression, maxLengthExpression) ) { 
+      calculatorScope.expression += "5"; 
+      document.getElementById("expression").innerHTML = calculatorScope.expression;
+      calculatorScope.flagOper = 0;
+    };
   }
   
   document.getElementById("six").onclick = function () {
-    calculatorScope.expression += "6";
-    document.getElementById("expression").innerHTML = calculatorScope.expression;
-    calculatorScope.flagOper = 0;
+    if ( calculatorScope.checkLength(expression, maxLengthExpression) ) { 
+      calculatorScope.expression += "6";
+      document.getElementById("expression").innerHTML = calculatorScope.expression;
+      calculatorScope.flagOper = 0;
+    };
   }
   
   document.getElementById("seven").onclick = function () {
-    calculatorScope.expression += "7";
-    document.getElementById("expression").innerHTML = calculatorScope.expression;
-    calculatorScope.flagOper = 0;
+    if ( calculatorScope.checkLength(expression, maxLengthExpression) ) { 
+      calculatorScope.expression += "7";
+      document.getElementById("expression").innerHTML = calculatorScope.expression;
+      calculatorScope.flagOper = 0;
+    };
   }
   
   document.getElementById("eight").onclick = function () {
-    calculatorScope.expression += "8";
-    document.getElementById("expression").innerHTML = calculatorScope.expression;
-    calculatorScope.flagOper = 0;
+    if ( calculatorScope.checkLength(expression, maxLengthExpression) ) { 
+      calculatorScope.expression += "8";
+      document.getElementById("expression").innerHTML = calculatorScope.expression;
+      calculatorScope.flagOper = 0;
+    };
   }
   
   document.getElementById("nine").onclick = function () {
-    calculatorScope.expression += "9";
-    document.getElementById("expression").innerHTML = calculatorScope.expression;
-    calculatorScope.flagOper = 0;
+    if ( calculatorScope.checkLength(expression, maxLengthExpression) ) { 
+      calculatorScope.expression += "9";
+      document.getElementById("expression").innerHTML = calculatorScope.expression;
+      calculatorScope.flagOper = 0;
+    };
   }
   
   document.getElementById("zero").onclick = function () {
     if (calculatorScope.expression !== "0") {
-      calculatorScope.expression += "0";
-      document.getElementById("expression").innerHTML = calculatorScope.expression;
-      calculatorScope.flagOper = 0;
+      if ( calculatorScope.checkLength(expression, maxLengthExpression) ) { 
+        calculatorScope.expression += "0";
+        document.getElementById("expression").innerHTML = calculatorScope.expression;
+        calculatorScope.flagOper = 0;
+      };
     }  
   }
   
   document.getElementById("dot").onclick = function () {
     if (calculatorScope.flagDot === 0 && calculatorScope.expression !== "") {
-      calculatorScope.expression += ".";
-      document.getElementById("expression").innerHTML = calculatorScope.expression;
-      calculatorScope.flagDot = 1;
+      if ( calculatorScope.checkLength(expression, maxLengthExpression) ) { 
+        calculatorScope.expression += ".";
+        document.getElementById("expression").innerHTML = calculatorScope.expression;
+        calculatorScope.flagOper = 1;
+      };
     }
   }
   
