@@ -19,13 +19,14 @@ $(document).ready(function() {
             origin: '*'
           },
           dataType: "jsonp",
-        complete: function(jqXHR, status) {
+        complete: function(jsonData, status) {
           console.log("here i am");
-          parser=new DOMParser();
+          /*parser=new DOMParser();
           htmlDoc=parser.parseFromString(jqXHR, "text/html");
           console.log(htmlDoc);
           // console.log(status);
           // console.log(jqXHR);
+          */
           
           for (let i = 0, x = 10; i < x; i++) {
             $("#p"+ i +"_page").prop("href", "https://en.wikipedia.org/?curid=" + jsonData.query.search[i].pageid);

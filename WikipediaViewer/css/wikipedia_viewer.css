@@ -35,12 +35,11 @@ body {
     width: 50%;
   }
   
-  
   #searchclear {
     position: absolute;
     right: 50%;
-    margin: auto;
-    font-size: auto;
+    margin: 2px auto;
+    font-size: 2em;
     cursor: pointer;
     color: #ccc;
   }
