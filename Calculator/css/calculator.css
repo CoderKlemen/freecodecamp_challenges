@@ -14,7 +14,6 @@ footer {
   padding: 10px 15px 10px;
   box-shadow: 10px 10px 8px #888888;
   min-width: 280px;
-  /* box-shadow: 0px 0px 25px #888888; // on all sides */
 }
 
 .calc-title {
@@ -29,19 +28,20 @@ footer {
   background-color: MediumSeaGreen;
   padding: 1px 15px 1px 1px;
   margin: 1px 1px 15px 1px;
-  height: 70px;
+  height: 90px;
 }
 
 #expression {
   font-size: 24px;
-  /* padding: 5px 1px 1px 1px; */
   height: 26px;
 }
 
 #history {
+  display: flex;
   font-size: 12px;
-  /* padding: 1px 5px 1px 1px; */
-  height: 14px;
+  height: 28px;
+  align-content: top;
+  justify-content: right;
 }
 
 .num-pad {
