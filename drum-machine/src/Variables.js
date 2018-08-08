@@ -5,7 +5,7 @@ export const keys = ['Q', 'W', 'E', 'A', 'S', 'D', 'Z', 'X', 'C'];
 export const sounds = {
     Q: {
         name: 'Thump',
-        link:  'https://www.dropbox.com/s/ncdikxfurfyz4wq/Q_Thump.mp3?dl=1'
+        link:  'https://www.dropbox.com/s/n0jlnxyoyxjc3u4/Q_Thump1.mp3?dl=1'
     },
     W: {
         name: 'Distorted Snare',
