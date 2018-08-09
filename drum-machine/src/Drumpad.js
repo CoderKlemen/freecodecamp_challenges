@@ -12,7 +12,7 @@ class Drumpad extends Component {
 
     handleClick(event) {
         event.preventDefault();
-        console.log(this.props.value);
+        // console.log(this.props.value);
         let audio = new Audio(sounds[this.props.value].link);
         audio.load();
         audio.play();
@@ -21,9 +21,12 @@ class Drumpad extends Component {
     render() {
         return (
             <div className="drum-pad" id={sounds[this.props.value].name}>
-                <button onClick={this.handleClick}>{this.props.value}</button>
-                <audio className="clip" id={this.props.value} preload="auto">
-                    <source src={sounds[this.props.value].link} type="audio/mpeg"></source>
+                <button onClick={this.handleClick}><strong>{this.props.value}</strong></button>
+                <audio  className="clip" 
+                        id={this.props.value} 
+                        preload="auto" 
+                        src={sounds[this.props.value].link} 
+                        type="audio/mpeg">                   
                 </audio>
             </div>
         );
