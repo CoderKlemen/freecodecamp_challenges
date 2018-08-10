@@ -1,4 +1,42 @@
-input {
-    /* border: none; */
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    width: 50%;
+    align-items: center;
+}
+
+.controls input {
+    border: none;
+    user-select: none;
+    /* background-color: #10710C;  za ugasnjen*/
+    background-color: #47C300;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    width: 70%;
+    height: 30px;
+}
+
+.controls button {
+    background-color: #2C3539;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
     border-color: red;
+    box-shadow: 0 2px red;
+}
+
+.controls button:hover {
+    cursor: pointer;
+    background-color: #4A4645;
+}
+
+.controls button:active {
+  box-shadow: 0 2px red;
+  transform: translateY(1px);
 }

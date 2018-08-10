@@ -12,10 +12,10 @@ class Drumpad extends Component {
 
     handleClick(event) {
         event.preventDefault();
-        // console.log(this.props.value);
         let audio = new Audio(sounds[this.props.value].link);
         audio.load();
         audio.play();
+        this.props.handleText(sounds[this.props.value].name);
     }
 
     render() {

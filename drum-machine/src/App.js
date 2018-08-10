@@ -1,30 +1,28 @@
 import React, { Component } from 'react';
-import Controls from './Controls';
 import './App.css';
 import Keypad from './Keypad';
+import Controls from './Controls';
 
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      Q: false,
-      W: false,
-      E: false,
-      A: false,
-      S: false,
-      d: false,
-      Z: false,
-      X: false,
-      C: false
+      pressed: ''
     }
   }
+
+  handleText = (dp) => {
+    this.setState({
+      pressed: dp,
+    });
+  };
 
   render() {
     return (
       <div id="drum-machine">
-        <Keypad />
-        <Controls />
+          <Keypad handleText={this.handleText}/>
+          <Controls pressed={this.state.pressed}/>       
       </div>
     );
   }

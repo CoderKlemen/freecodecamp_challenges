@@ -8,12 +8,15 @@ class Controls extends Component {
         super(props);
     }
 
+    handleButton = (event) => {
+        event.preventDefault();
+    }
 
     render() {
         return (
-            <div>
-                <button>ON / OFF</button>  {/* own function */}
-                <input />
+            <div className="controls">
+                <button onClick={this.handleButton}>ON / OFF</button>
+                <input id="display" value={this.props.pressed}/>
             </div>
         );
     }
