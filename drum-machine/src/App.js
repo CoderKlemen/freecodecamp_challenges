@@ -8,7 +8,8 @@ class App extends Component {
     super(props);
 
     this.state = {
-      pressed: ''
+      pressed: '',
+      on: true,
     }
   }
 
@@ -18,11 +19,17 @@ class App extends Component {
     });
   };
 
+  handleButtonOnOff = () => {
+    this.setState({
+      on: !this.state.on,
+    })
+  }
+
   render() {
     return (
       <div id="drum-machine">
           <Keypad handleText={this.handleText}/>
-          <Controls pressed={this.state.pressed}/>       
+          <Controls pressed={this.state.pressed} handleButtonOnOff={this.handleButtonOnOff} onOff={this.state.on}/>       
       </div>
     );
   }

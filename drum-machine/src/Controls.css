@@ -15,13 +15,21 @@
     border-radius: 5px;
     color: white;
     font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     width: 70%;
     height: 30px;
 }
 
-.controls button {
+.controls div h6 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: lightgray;
+
+}
+
+.controls div button {
     background-color: #2C3539;
     border: 1px solid black;
     border-radius: 5px;
@@ -29,14 +37,16 @@
     padding: 5px;
     border-color: red;
     box-shadow: 0 2px red;
+    width: 60px;
+    height: 40px;
 }
 
-.controls button:hover {
+.controls div button:hover {
     cursor: pointer;
     background-color: #4A4645;
 }
 
-.controls button:active {
-  box-shadow: 0 2px red;
+.controls div button:active {
+  box-shadow: 0 1px red;
   transform: translateY(1px);
 }

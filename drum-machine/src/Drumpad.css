@@ -24,6 +24,6 @@
 }
 
 .drum-pad button:active {
-    box-shadow: 0 2px red;
+    box-shadow: 0 1px red;
     transform: translateY(1px);
   }
