@@ -9,21 +9,44 @@
 .drum-pad button{
     background-color: #3B3131;
     border-radius: 5px;
-    border: 1px solid black;
     color: #A52A2A;
     font-size: 24px;
     width: 100%;
     height: 100%;
     padding: 5px;
-    border-color: red;
-    box-shadow: 0 2px red;
 }
-.drum-pad button:hover {
+
+
+
+/*
+.drum-pad button:active {
+    box-shadow: 0 1px red;
+    transform: translateY(1px);
+} 
+*/
+
+.button-on:hover {
     cursor: pointer;
     color: red;
 }
 
-.drum-pad button:active {
+.button-on {
+    border: 1px solid red;
+    box-shadow: 0 2px red;
+}
+
+.button-on:active {
     box-shadow: 0 1px red;
     transform: translateY(1px);
-  }
+}
+  
+
+.button-off {
+    border: 1px solid maroon;
+    box-shadow: 0 2px maroon;
+}
+
+.button-off:active {
+    box-shadow: 0 1px maroon;
+    transform: translateY(1px);
+}

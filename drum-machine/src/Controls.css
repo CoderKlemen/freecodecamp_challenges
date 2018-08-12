@@ -9,9 +9,7 @@
 
 .controls input {
     border: none;
-    user-select: none;
-    /* background-color: #10710C;  za ugasnjen*/
-    background-color: #47C300;
+    user-select: none;   
     border-radius: 5px;
     color: white;
     font-family: 'Orbitron', sans-serif;
@@ -22,6 +20,14 @@
     height: 30px;
 }
 
+.input-on {
+    background-color: #47C300;
+}
+
+.input-off {
+    background-color: #10710C;
+}
+
 .controls div h6 {
     margin-top: 0;
     margin-bottom: 5px;
@@ -30,15 +36,33 @@
 }
 
 .controls div button {
-    background-color: #2C3539;
-    border: 1px solid black;
+    background-color: #2C3539;    
     border-radius: 5px;
     color: white;
     padding: 5px;
-    border-color: red;
-    box-shadow: 0 2px red;
     width: 60px;
     height: 40px;
+}
+
+.button-on {
+    border: 1px solid red;
+    box-shadow: 0 2px red;
+}
+
+.button-on:active {
+    box-shadow: 0 1px red;
+    transform: translateY(1px);
+}
+
+
+.button-off {
+    border: 1px solid maroon;
+    box-shadow: 0 2px maroon;
+}
+
+.button-off:active {
+    box-shadow: 0 1px maroon;
+    transform: translateY(1px);
 }
 
 .controls div button:hover {
@@ -46,7 +70,3 @@
     background-color: #4A4645;
 }
 
-.controls div button:active {
-  box-shadow: 0 1px red;
-  transform: translateY(1px);
-}
