@@ -13,10 +13,12 @@ class Drumpad extends Component {
     handleClick(event) {
         event.preventDefault();
         if (this.props.onOff) {
-            let audio = new Audio(sounds[this.props.value].link);
+            document.getElementById(this.props.value).play();
+            document.getElementById('display').innerHTML = sounds[this.props.value].name;
+            // this.props.handleText(sounds[this.props.value].name);                      
+            /*const audio = new Audio(sounds[this.props.value].link);          
             audio.load();
-            audio.play();
-            this.props.handleText(sounds[this.props.value].name);
+            audio.play();*/
         }    
     }
 
@@ -24,8 +26,8 @@ class Drumpad extends Component {
         const btnClass = this.props.onOff ? 'button-on' : 'button-off';
 
         return (
-            <div className="drum-pad" id={sounds[this.props.value].name}>
-                <button onClick={this.handleClick} className={btnClass}><strong>{this.props.value}</strong></button>
+            <div className="drum-pad" id={sounds[this.props.value].name} onClick={this.handleClick}>
+                <button className={btnClass}><strong>{this.props.value}</strong></button>
                 <audio  className="clip" 
                         id={this.props.value} 
                         preload="auto" 

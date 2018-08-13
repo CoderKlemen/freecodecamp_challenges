@@ -10,7 +10,7 @@ class App extends Component {
 
     this.state = {
       pressed: '',
-      on: false,
+      on: true,
     }
   }
 
@@ -25,6 +25,10 @@ class App extends Component {
       on: !this.state.on,
       pressed: this.state.on ? this.state.pressed : '',
     })
+    if (!this.state.pressed) {
+      document.getElementById('display').innerHTML = '';
+    }
+    
   }
 
   handleKeyDown = (event) => {
@@ -32,10 +36,12 @@ class App extends Component {
     const buttonPressed = event.key;
     const drumKeys = ['q','w','e','a','s','d','z','x','c','Q','W','E','A','S','D','Z','X','C'];
     if (this.state.on && drumKeys.includes(buttonPressed)) {
-        let audio = new Audio(sounds[buttonPressed.toUpperCase()].link);
-        audio.load();
-        audio.play();
-        this.handleText(sounds[buttonPressed.toUpperCase()].name);
+      document.getElementById(buttonPressed.toUpperCase()).play();
+      document.getElementById('display').innerHTML = sounds[buttonPressed.toUpperCase()].name;
+      // this.handleText(sounds[buttonPressed.toUpperCase()].name); 
+      /*const audio = new Audio(sounds[buttonPressed.toUpperCase()].link);
+      audio.load();
+      audio.play();*/             
     }
   }
 

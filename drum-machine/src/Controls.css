@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.controls input {
+.controls p {
     border: none;
     user-select: none;   
     border-radius: 5px;
@@ -15,9 +15,12 @@
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     text-align: center;
+    vertical-align: bottom;
     text-transform: uppercase;
-    width: 70%;
-    height: 30px;
+    width: 210px;
+    height: 26px;
+    padding-top: 8px;
+    cursor: default;
 }
 
 .input-on {

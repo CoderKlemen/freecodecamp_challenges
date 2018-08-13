@@ -17,13 +17,13 @@ class Controls extends Component {
         const inputValue = this.props.onOff ? this.props.pressed : '';
 
         return (
-            <div className="controls">
+            <div className="controls" >
                 <div>
                     <h6>ON / OFF</h6>
-                    <button onClick={this.handleButton} className={btnClass}></button>
+                    <button onClick={this.handleButton}  className={btnClass}></button>
                 </div>                
-                <input id="display" value={inputValue} className={inputClass}/>
-                {/* zamenjaj input z nekim drugim elementom.. zgleda da testi na FCC ne znajo prebrat value na inputu... zato en test sfali...*/}
+                { /*<input id="display1" value={inputValue} className={inputClass}/> */}
+                <p id="display" className={inputClass}>{inputValue}</p>
             </div>
         );
     }
