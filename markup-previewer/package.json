@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/marked": "^0.4.0",
-    "@types/react-bootstrap": "^0.32.11",
     "marked": "^0.4.0",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
