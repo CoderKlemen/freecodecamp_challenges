@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Grid, Row, Col, Button, Jumbotron } from 'react-bootstrap'
-import marked from 'marked'
+import React from 'react';
+import { Grid, Row, Col, Button, Jumbotron } from 'react-bootstrap';
+import marked from 'marked';
 
 import './App.css';
 
-// let { Grid, Row, Col, Button, Jumbotron } = ReactBootstrap;
+//let { Grid, Row, Col, Button, Jumbotron } = ReactBootstrap;
 
 /* Main app */
 class App extends React.Component {
